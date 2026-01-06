@@ -100,6 +100,19 @@ Chaque nœud représente une ville avec :
 - PyTorch Geometric (PyG)  
 - Transformers (HuggingFace)  
 - scikit-learn  
-- Matplotlib, Seaborn, NumPy, tqdm  
+- Matplotlib, Seaborn, NumPy, tqdm
+
+## 📝 Notes
+
+- Les embeddings GNN sont stockés dans le dossier `Embeddings/`
+- Les modèles pré-entraînés sont disponibles dans `Modules/`
+- Le fichier `config.py` permet de modifier les hyperparamètres globaux
+
+## 🔗 Références
+
+- OpenStreetMap  
+- PyTorch Geometric Documentation  
+- HuggingFace Transformers  
+
 
 
