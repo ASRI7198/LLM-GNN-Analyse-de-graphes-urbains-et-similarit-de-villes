@@ -102,18 +102,4 @@ Chaque nœud représente une ville avec :
 - scikit-learn  
 - Matplotlib, Seaborn, NumPy, tqdm  
 
-## 💡 Installation
-
-### Créer et activer l'environnement
-conda create -n LLM-GNN python=3.10
-conda activate LLM-GNN
-
-### Installer PyTorch
-pip install torch torchvision torchaudio
-
-### Installer PyTorch Geometric
-pip install torch-geometric
-
-### Installer autres dépendances
-pip install transformers scikit-learn matplotlib seaborn tqdm
 
