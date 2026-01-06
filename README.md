@@ -43,3 +43,76 @@ LLM-GNN/
 ├── config.py
 └── README.md
 ```
+
+### Détails des dossiers :
+- **Architectures/** : Contient les fichiers pour différents modèles de GNN (GCN, GAT, VGAE)
+- **Data/** : Contient le dataset brut OSM.xml, les notebooks pour préparer les données et le fichier .pt prêt pour PyG
+- **Embeddings/** : Contient les embeddings générés par les modèles GNN pour les villes
+- **LLM/** : Contient les fonctions et notebooks pour l'analyse avec le LLM (explications de similarité)
+- **main/** : Contient le code principal pour l'entraînement, l'évaluation et les tests des modèles
+- **Modules/** : Contient les modèles sauvegardés au format .pth
+- **config.py** : Paramètres globaux du projet
+
+## 📊 Dataset
+
+Le dataset utilisé est extrait de **OpenStreetMap** sous format GraphML/XML.
+
+### Exemple de structure XML :
+```xml
+<node id="0">
+  <data key="d0">-145.509722</data>    <!-- Longitude -->
+  <data key="d1">-17.353889</data>     <!-- Latitude -->
+  <data key="d2">10000</data>          <!-- Population -->
+  <data key="d3">FRENCH_POLYNESIA</data> <!-- Country -->
+  <data key="d4">Anaa</data>           <!-- City Name -->
+</node>
+<node id="1">
+  <data key="d0">-140.95</data>
+  <data key="d1">-18.066667</data>
+  <data key="d2">10000</data>
+  <data key="d3">FRENCH_POLYNESIA</data>
+  <data key="d4">Hao Island</data>
+</node>
+
+# Caractéristiques du graphe
+
+- **3363 nœuds (villes)**  
+- **13547 arêtes (relations)**
+
+## Attributs des nœuds
+
+Chaque nœud représente une ville avec :  
+
+- **Features numériques pour les GNN :**  
+  - longitude  
+  - latitude  
+  - population  
+
+- **Informations textuelles pour les explications via LLM :**  
+  - pays  
+  - nom de la ville  
+
+## 🧰 Dépendances
+
+- Python 3.10  
+- PyTorch ≥ 2.0  
+- PyTorch Geometric (PyG)  
+- Transformers (HuggingFace)  
+- scikit-learn  
+- Matplotlib, Seaborn, NumPy, tqdm  
+
+## 💡 Installation
+
+# Créer et activer l'environnement
+conda create -n LLM-GNN python=3.10
+conda activate LLM-GNN
+
+# Installer PyTorch
+pip install torch torchvision torchaudio
+
+# Installer PyTorch Geometric
+pip install torch-geometric
+
+# Installer autres dépendances
+pip install transformers scikit-learn matplotlib seaborn tqdm
+
