@@ -7,6 +7,7 @@ LLM-GNN combine **Graph Neural Networks (GNN)** et **Large Language Models (LLM)
 - Générer des explications textuelles sur la similarité des villes selon la population, la localisation et le pays
 
 ## 📂 Structure du projet
+'''
 LLM-GNN/
 │
 ├── Architectures/
@@ -41,3 +42,4 @@ LLM-GNN/
 │
 ├── config.py
 └── README.md
+'''
