@@ -75,12 +75,12 @@ Le dataset utilisé est extrait de **OpenStreetMap** sous format GraphML/XML.
 </node>
 ```
 
-# Caractéristiques du graphe
+## Caractéristiques du graphe
 
 - **3363 nœuds (villes)**  
 - **13547 arêtes (relations)**
 
-## Attributs des nœuds
+### Attributs des nœuds
 
 Chaque nœud représente une ville avec :  
 
@@ -104,16 +104,16 @@ Chaque nœud représente une ville avec :
 
 ## 💡 Installation
 
-# Créer et activer l'environnement
+### Créer et activer l'environnement
 conda create -n LLM-GNN python=3.10
 conda activate LLM-GNN
 
-# Installer PyTorch
+### Installer PyTorch
 pip install torch torchvision torchaudio
 
-# Installer PyTorch Geometric
+### Installer PyTorch Geometric
 pip install torch-geometric
 
-# Installer autres dépendances
+### Installer autres dépendances
 pip install transformers scikit-learn matplotlib seaborn tqdm
 
